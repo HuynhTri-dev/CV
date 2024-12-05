@@ -359,14 +359,53 @@ body {
 
   .skill-wrapper {
     width: 95%;
+    height: auto;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    column-gap: 5px;
+    display: block;
+  }
+
+  .addition-skills {
+    width: 90%;
+    margin: 10px auto;
   }
 
   .project-tile {
     height: 200px;
+  }
+}
+
+@media (max-width: 680px) {
+  /* Kiểu cho màn hình rất nhỏ (smartphone) */
+  body {
+    font-size: 14px;
+  }
+
+  #skill-section {
+    height: auto;
+  }
+
+  .skill-wrapper {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .addition-skills {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .projects-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    row-gap: 5px;
+  }
+
+  .project-tile {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -384,20 +423,28 @@ body {
     width: 95%;
     height: auto;
     margin: 0 auto;
-    display: grid;
-    grid-template-rows: auto auto;
-    column-gap: 1px;
+    display: block;
+  }
+
+  .addition-skills {
+    width: 90%;
+    margin: 10px auto;
   }
 
   .projects-wrapper {
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
     height: auto;
-    row-gap: 5px;
+    display: block;
   }
 
   .project-tile {
+    height: 300px;
     width: 100%;
-    height: auto;
+    margin: 10px auto;
+  }
+
+  .title {
+    width: 100%;
   }
 }
