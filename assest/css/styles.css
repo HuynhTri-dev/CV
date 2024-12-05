@@ -369,3 +369,35 @@ body {
     height: 200px;
   }
 }
+
+@media (max-width: 480px) {
+  /* Kiểu cho màn hình rất nhỏ (smartphone) */
+  body {
+    font-size: 12px;
+  }
+
+  #skill-section {
+    height: auto;
+  }
+
+  .skill-wrapper {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    column-gap: 1px;
+  }
+
+  .projects-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    row-gap: 5px;
+  }
+
+  .project-tile {
+    width: 100%;
+    height: auto;
+  }
+}
